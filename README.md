@@ -37,9 +37,9 @@ and now it looks like:
 * 0ebb25b3f - (23 hours ago) wip - Daniel King (HEAD -> dk4)
 * d0d83b3c0 - (23 hours ago) wip - Daniel King (dk3)
 * e5c916673 - (25 hours ago) wip - Daniel King
-* 8c6347095 - (25 hours ago) Revert "remove na stuff" - Daniel King
+* 8c6347095 - (25 hours ago) wip - Daniel King
 * f234c20fd - (25 hours ago) fix up - Daniel King (dk2)
-* a85493a6d - (25 hours ago) remove na stuff - Daniel King
+* a85493a6d - (25 hours ago) wip - Daniel King
 * 2b02e14d3 - (26 hours ago) wip - Daniel King
 * dfecea647 - (29 hours ago) wip - Daniel King
 * bbbc14867 - (32 hours ago) wip - Daniel King
