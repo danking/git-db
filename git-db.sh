@@ -2,8 +2,6 @@
 
 set -ex
 
-# git-db master dk4'^' dk4 turbo-hail turbo-hail2 turbo-hail3
-
 # git-db newroot oldroot b1 b2 b3 ...
 # b3 depends on b2, b2 depends on b1, b1 previously depended on oldroot
 
