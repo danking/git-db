@@ -21,7 +21,7 @@ function continuation() {
     echo "next " $CURRENT_NAME $CURRENT_HASH $*
 }
 
-trap continuation SIGINT SIGTERM
+trap continuation SIGINT SIGTERM ERR
 
 while [[ $# -gt 0 ]]
 do
@@ -33,4 +33,4 @@ do
     NEWROOT="${CURRENT_NAME}"
     OLDROOT="${CURRENT_HASH}"
 done
-trap - SIGINT SIGTERM
+trap - SIGINT SIGTERM ERR
