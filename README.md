@@ -28,7 +28,7 @@ In visual form:
 
 execute:
 ```
-git-db.sh master 'dk^' dk dk2 dk3 dk4
+git-db.sh 'make clean && make test' master 'dk^' dk dk2 dk3 dk4
 ```
 
 and now it looks like:

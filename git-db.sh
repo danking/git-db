@@ -16,9 +16,11 @@ NEWROOT="$2"
 OLDROOT=$(git rev-parse "$3")
 shift 3
 
+# $* is different inside trap
+REST=$*
 function continuation() {
     echo "in process " $NEWROOT $OLDROOT $CURRENT_NAME
-    echo "next " $CURRENT_NAME $CURRENT_HASH $*
+    echo "next " $CURRENT_NAME $CURRENT_HASH $REST
 }
 
 trap continuation SIGINT SIGTERM ERR
@@ -27,6 +29,7 @@ while [[ $# -gt 0 ]]
 do
     CURRENT_NAME="$1"
     shift
+    REST=$*
     CURRENT_HASH=$(git rev-parse "${CURRENT_NAME}")
     git rebase --onto "${NEWROOT}" "${OLDROOT}" "${CURRENT_NAME}"
     eval $VERIFY
